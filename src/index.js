@@ -5,8 +5,13 @@ import initParticles from './particles.js';
 
 document.addEventListener('DOMContentLoaded', function () {
     initParticles();
-    });
+    const navToggle = document.querySelector('.nav-toggle');
+        const nav = document.querySelector('nav');
+
+        navToggle.addEventListener('click', function() {
+            nav.classList.toggle('nav-active');
+        });
+});
 
 
-
-
+    
