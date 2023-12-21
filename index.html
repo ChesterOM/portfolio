@@ -16,11 +16,26 @@
     
 </head>
 <body id="top">
+    <style>
+        @font-face {
+        font-family: 'HelveticaNeueCyr';
+        src: url('../src/fonts/helveticaneuecyr.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+        
+        body {
+        font-family: 'HelveticaNeueCyr', Roboto;
+        }
+    </style>
     <div id="particles-js"></div>
     <header>
         <div class="logo">
             <img class="logo" src="../src/images/portfoliologo.png" alt="Chester's logo">
         </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="material-icons menu">menu</span>
+        </button>
         <nav>
             <ul>
                 <li><a href="#top" class="nav-link home-button">Home</a></li>
@@ -45,73 +60,85 @@
             </a>
         </nav>
     </main>
+
     <div id="about"></div>
     <div class="about-header">
         <h2 class="about-title">About</h2>
     </div>
     <section class="about-section">
         <div class="about-content-container">
-            <div class="about-text">
-                <p>Your text content here...</p>
+            
+            <div class="about-img">
+                <img src="../src/images/portfolioprofilepic.png" alt="AI image of chester">
             </div>
-            <ul class="skills-grid">
-                <li class="tech-icon" aria-label="JavaScript">
-                    <i class="devicon-javascript-plain colored" aria-hidden="true"></i>
-                    <span class="sr-only">JavaScript</span>
-                </li>
-        
-                <li class="tech-icon" aria-label="HTML5">
-                    <i class="devicon-html5-plain colored" aria-hidden="true"></i>
-                    <span class="sr-only">HTML5</span>
-                </li>
-        
-                <li class="tech-icon" aria-label="CSS3">
-                    <i class="devicon-css3-plain colored" aria-hidden="true"></i>
-                    <span class="sr-only">CSS3</span>
-                </li>
-        
-                <li class="tech-icon" aria-label="React">
-                    <i class="devicon-react-original colored" aria-hidden="true"></i>
-                    <span class="sr-only">React</span>
-                </li>
-        
-                <li class="tech-icon" aria-label="Figma">
-                    <i class="devicon-figma-plain colored" aria-hidden="true"></i>
-                    <span class="sr-only">Figma</span>
-                </li>
-        
-                <li class="tech-icon" aria-label="Node.js">
-                    <i class="devicon-nodejs-plain colored" aria-hidden="true"></i>
-                    <span class="sr-only">Node.js</span>
-                </li>
-        
-                <li class="tech-icon" aria-label="npm">
-                    <i class="devicon-npm-original-wordmark colored" aria-hidden="true"></i>
-                    <span class="sr-only">npm</span>
-                </li>
-        
-                <li class="tech-icon" aria-label="Jest">
-                    <i class="devicon-jest-plain colored" aria-hidden="true"></i>
-                    <span class="sr-only">Jest</span>
-                </li>
-        
-                <li class="tech-icon" aria-label="MongoDB">
-                    <i class="devicon-mongodb-plain colored" aria-hidden="true"></i>
-                    <span class="sr-only">MongoDB</span>
-                </li>
-        
-                <li class="tech-icon" aria-label="Git">
-                    <i class="devicon-git-plain colored" aria-hidden="true"></i>
-                    <span class="sr-only">Git</span>
-                </li>
-        
-                <li class="tech-icon" aria-label="Webpack">
-                    <i class="devicon-webpack-plain colored" aria-hidden="true"></i>
-                    <span class="sr-only">Webpack</span>
-                </li>
-            </ul>
+            <div class="about-text">
+                <h3>Professional</h3>
+                <p>
+                    As a budding full-stack web developer, I'm fully immersed in learning through The Odin Project and Harvard's CS50. My former experience in Esports has endowed me with a strategic mindset and resilience, both of which fuel my programming endeavors.
+                </p>
+                <h3>Personal</h3>
+                <p>
+                    Outside of coding, my life is rich with interests. From a history in competitive gaming to a zest for finance, I have a diverse palette. I'm also an avid traveler and enjoy watching rugby – a testament to my multifaceted personality.
+                </p>
+            </div>
         </div>
-    </section>    
+        <ul class="skills-grid">
+            <li class="tech-icon" aria-label="JavaScript">
+                <i class="devicon-javascript-plain colored" aria-hidden="true"></i>
+                <span>JavaScript</span>
+            </li>
+
+            <li class="tech-icon" aria-label="HTML5">
+                <i class="devicon-html5-plain colored" aria-hidden="true"></i>
+                <span>HTML5</span>
+            </li>
+
+            <li class="tech-icon" aria-label="CSS3">
+                <i class="devicon-css3-plain colored" aria-hidden="true"></i>
+                <span>CSS3</span>
+            </li>
+
+            <li class="tech-icon" aria-label="React">
+                <i class="devicon-react-original colored" aria-hidden="true"></i>
+                <span>React</span>
+            </li>
+
+            <li class="tech-icon" aria-label="Figma">
+                <i class="devicon-figma-plain colored" aria-hidden="true"></i>
+                <span>Figma</span>
+            </li>
+
+            <li class="tech-icon" aria-label="Node.js">
+                <i class="devicon-nodejs-plain colored" aria-hidden="true"></i>
+                <span>Node.js</span>
+            </li>
+
+            <li class="tech-icon" aria-label="npm">
+                <i class="devicon-npm-original-wordmark colored" aria-hidden="true"></i>
+                <span>npm</span>
+            </li>
+
+            <li class="tech-icon" aria-label="Jest">
+                <i class="devicon-jest-plain colored" aria-hidden="true"></i>
+                <span>Jest</span>
+            </li>
+
+            <li class="tech-icon" aria-label="MongoDB">
+                <i class="devicon-mongodb-plain colored" aria-hidden="true"></i>
+                <span>MongoDB</span>
+            </li>
+
+            <li class="tech-icon" aria-label="Git">
+                <i class="devicon-git-plain colored" aria-hidden="true"></i>
+                <span>Git</span>
+            </li>
+
+            <li class="tech-icon" aria-label="Webpack">
+                <i class="devicon-webpack-plain colored" aria-hidden="true"></i>
+                <span>Webpack</span>
+            </li>
+        </ul>
+    </section>  
         
     <div id="portfolio"></div>
 
@@ -123,24 +150,24 @@
         <div class="portfolio-container">
             <div class="project-content">
                 <h3>Restaurant Web Design</h3>
-                <p>This is a paragraph explaining the details about this amazing project where I demonstrate so and so skills blah blah blah. This restaurant is base on the fictional restaurant from the TV show The Bear.</p>
+                <p>In this project, I Developed a dynamic restaurant homepage that fully utilizes JavaScript for DOM manipulation to render all content. The project demonstrates skills in creating a modular JavaScript structure, employing Webpack for bundling, and writing clean, maintainable code. It features interactive tabs for the menu and contact information, showcasing the ability to build a user-friendly, single-page web application. </p>
                 <div class="project-button-container">
                     <a href="https://github.com/ChesterOM/restaurant-page" class="project-button" target="_blank"><span>Repository</span></a>
                     <a href="https://chesterom.github.io/restaurant-page/" class="project-button" target="_blank"><span>Live Page</span></a>
                 </div>
             </div>
-            <div class="project-image">
+            <div class="project-image right">
                 <img src="../src/images/RestaurantPage.png" alt="Restaurant Web Design">
             </div>
         </div>
         
         <div class="portfolio-container">
-            <div class="project-image">
+            <div class="project-image left">
                 <img src="../src/images/WeatherApp.png" alt="Weather App">
             </div>
             <div class="project-content">
                 <h3>Weather App</h3>
-                <p>This is a paragraph explaining the details about this amazing project where I demonstrate so and so skills blah blah blah. This restaurant is base on the fictional restaurant from the TV show The Bear.</p>
+                <p>For this task I implemented an interactive weather forecast application that interfaces with the Weather API. This application demonstrates proficiency in API integration, asynchronous JavaScript (async/await), and dynamically updating the DOM based on user input. Features include a location-based search and temperature unit toggle between Fahrenheit and Celsius, with a responsive design that adapts the page aesthetic to the current weather conditions</p>
                 <div class="project-button-container">
                     <a href="https://github.com/ChesterOM/weatherapp" class="project-button" target="_blank"><span>Repository</span></a>
                     <a href="https://chesterom.github.io/weatherapp/" class="project-button" target="_blank"><span>Live Page</span></a>
@@ -152,23 +179,24 @@
         <div class="portfolio-container">
             <div class="project-content">
                 <h3>ToDo App</h3>
-                <p>This is a paragraph explaining the details about this amazing project where I demonstrate so and so skills blah blah blah. This restaurant is base on the fictional restaurant from the TV show The Bear.</p>
+                <p>Here I developed a comprehensive to-do list application showcasing object-oriented programming with constructors and classes. This application includes features such as task objects with attributes like title, description, dueDate, and priority level. It allows for project categorization, task editing, prioritization, and employs localStorage for data persistence. This project demonstrates a clear understanding of CRUD operations, modular coding practices, and date manipulation using date-fns library.</p>
                 <div class="project-button-container">
                     <a href="https://github.com/ChesterOM/todo" class="project-button" target="_blank"><span>Repository</span></a>
                     <a href="https://chesterom.github.io/todo/" class="project-button" target="_blank"><span>Live Page</span></a>
                 </div>
             </div>
-            <div class="project-image">
+            <div class="project-image right">
                 <img src="../src/images/TodoApp.png" alt="To Do App">
             </div>
         </div>
         <div class="portfolio-container">
-            <div class="project-image">
+            <div class="project-image left">
                 <img src="../src/images/battleships.png" alt="Weather App">
             </div>
             <div class="project-content">
                 <h3>BattleShips Game</h3>
-                <p>This is a paragraph explaining the details about this amazing project where I demonstrate so and so skills blah blah blah. This restaurant is base on the fictional restaurant from the TV show The Bear.</p>
+                <p>
+                    In this Battleship game project, I applied Test Driven Development to build game logic that allows for dynamic ship placement and attack coordination on a gameboard. My code enables player turns against an AI opponent and checks for win conditions, showcasing my skills in JavaScript logic, event handling, and DOM manipulation.</p>
                 <div class="project-button-container">
                     <a href="https://github.com/ChesterOM/battle-ship" class="project-button" target="_blank"><span>Repository</span></a>
                     <a href="https://chesterom.github.io/battle-ship/" class="project-button" target="_blank"><span>Live Page</span></a>
@@ -182,6 +210,15 @@
           </button>
         <span class="footer-content">Created by Chester Oxford-Mahoney</span>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const nav = document.querySelector('nav');
     
+            navToggle.addEventListener('click', function() {
+                nav.classList.toggle('nav-active');
+            });
+        });
+    </script>
 </body>
 </html>
